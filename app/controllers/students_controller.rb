@@ -21,8 +21,11 @@ class StudentsController < ApplicationController
   def create
     @student = Student.new(params.require(:student).permit(:name))
 
-    @student.save
-    redirect_to @student # Show Action
+    if @student.save
+      redirect_to @student # Show Action
+    else
+      render 'new'
+    end
   end
   # No view, action will redirect or render.
 end
