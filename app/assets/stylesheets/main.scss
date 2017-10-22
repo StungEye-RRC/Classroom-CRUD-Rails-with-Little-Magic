@@ -3,6 +3,11 @@ header nav ul {
   padding-left: 0;
 }
 
+header nav ul li {
+  display: inline-block;
+  padding-right: 1em;
+}
+
 header,
 #main {
   width: 800px;
