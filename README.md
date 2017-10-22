@@ -1,24 +1,12 @@
-# README
+# Classroom CRUD - Rails with Little Magic  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Building a simple CRUD app without scaffolding and with little magic.
 
-Things you may want to cover:
+Currently this application includes a Student model and a Students controller.
 
-* Ruby version
+The CRUD tasks will be built around seven RESTful routes.
 
-* System dependencies
+## Associated Tutorial Videos
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* [Rails 5 CRUD with Little Magic - Part 1 - Index, Show and Partials](https://youtu.be/1lknHWTPMEI)
+* [Rails 5 CRUD with Little Magic - Part 2 - New and Create](https://youtu.be/3Iz0Nxn7qX4)
