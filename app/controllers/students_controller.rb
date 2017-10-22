@@ -13,11 +13,16 @@ class StudentsController < ApplicationController
 
   # GET /students/new
   def new
+    @student = Student.new
   end
   # Load app/views/students/new.html.erb
 
   # POST /students
   def create
+    @student = Student.new(params.require(:student).permit(:name))
+
+    @student.save
+    redirect_to @student # Show Action
   end
   # No view, action will redirect or render.
 end
