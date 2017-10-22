@@ -1,0 +1,9 @@
+<h1>Classroom</h1>
+
+<% @students.each do |student| %>
+  <div class="student">
+    <p>
+      <strong>Name:</strong> <%= link_to student.name, student %>
+    </p>
+  </div>
+<% end %>

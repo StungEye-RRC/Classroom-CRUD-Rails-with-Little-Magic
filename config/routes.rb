@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # Show Collection
+  get 'students', to: 'students#index', as: 'students'
+
+  # Show Member
+  get 'students/:id', to: 'students#show',  as: 'student', id: /\d+/
+
+  # Root routes
+  root to: 'students#index'
 end
