@@ -1,8 +1,5 @@
+<%= render partial: 'student',
+           object: @student,
+           locals: { display_student_link: false } %>
 
-  <div class="student">
-    <p>
-      <strong>Name:</strong> <%= @student.name %>
-    </p>
-  </div>
-
-  <p><%= link_to 'Back', students_path %></p>
+<p><%= link_to 'Back', students_path %></p>

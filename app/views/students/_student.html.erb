@@ -1,0 +1,10 @@
+<div class="student">
+  <p>
+    <strong>Name:</strong>
+    <% if display_student_link %>
+      <%= link_to student.name, student_path(student) %>
+    <% else %>
+      <%= student.name %>
+    <% end %>
+  </p>
+</div>
